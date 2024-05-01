@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align content */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    margin-bottom: 30px; /* Increased margin for more spacing between items */
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info h2 {
+    margin: 0;
+    font-size: 1.2rem; /* Increase font size for item name */
+    color: #333;
+}
+
+.item-info p {
+    margin: 0;
+    font-size: 1rem; /* Adjust font size for item price */
+    color: #666;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.update-btn,
+.remove-btn {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.proceed-to-checkout-btn {
+    margin-left: auto; /* This will push the button to the right side */
+    /* Add any additional styling you want for the button */
+}
+
+.add-more-items-btn,
+.proceed-to-checkout-btn {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px; /* Margin to create space between button and items */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.add-more-items-btn:hover,
+.proceed-to-checkout-btn:hover {
+    background-color: #005f80; /* Darker shade of blue on hover */
+}

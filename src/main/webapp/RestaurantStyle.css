@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.welcome-title {
+    font-size: 36px;
+    color: #333;
+}
+
+.restaurant-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.restaurant-card {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-image-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.restaurant-content-container {
+    padding: 20px;
+}
+
+.restaurant-info {
+    margin-bottom: 20px;
+}
+
+.restaurant-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    /* Add ellipsis for long text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.restaurant-CuisineType, .restaurant-address, .restaurant-DeliveryTime {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    /* Add ellipsis for long text */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top; /* Ensure fixed alignment */
+}
+
+.restaurant-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-rating-value {
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.restaurant-rating i {
+    color: #ffc107;
+}
+
+.restaurant-DeliveryTime {
+    font-size: 16px;
+    color: #666;
+    /* Add ellipsis for long text */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top; /* Ensure fixed alignment */
+}
+
+/* Add this CSS to remove underlines from anchor tags within .restaurant-card */
+.restaurant-card a {
+    text-decoration: none; /* Remove underline */
+}
+
+
+
